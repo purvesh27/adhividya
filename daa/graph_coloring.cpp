@@ -19,8 +19,7 @@ sent in the parameter) is already
 used by its adjacent
 vertices(i-->adj vertices) or
 not (i.e, color[i]==c) */
-bool isSafe(int v, bool graph[V][V],
-			int color[], int c)
+bool isSafe(int v, bool graph[V][V], int color[], int c)
 {
 	for(int i = 0; i < V; i++)
 		if (graph[v][i] && c == color[i])
@@ -31,8 +30,7 @@ bool isSafe(int v, bool graph[V][V],
 
 /* A recursive utility function
 to solve m coloring problem */
-bool graphColoringUtil(bool graph[V][V], int m,
-					int color[], int v)
+bool graphColoringUtil(bool graph[V][V], int m, int color[], int v)
 {
 	
 	/* base case: If all vertices are
@@ -135,5 +133,5 @@ int main()
 	return 0;
 }
 
-// This code is contributed by Shivani
+
 
