@@ -12,8 +12,7 @@ void printSolution(int path[]);
 the vertex v can be added at index 'pos'
 in the Hamiltonian Cycle constructed
 so far (stored in 'path[]') */
-bool isSafe(int v, bool graph[V][V],
-			int path[], int pos)
+bool isSafe(int v, bool graph[V][V], int path[], int pos)
 {
 	/* Check if this vertex is an adjacent
 	vertex of the previously added vertex. */
@@ -32,8 +31,7 @@ bool isSafe(int v, bool graph[V][V],
 
 /* A recursive utility function
 to solve hamiltonian cycle problem */
-bool hamCycleUtil(bool graph[V][V],
-				int path[], int pos)
+bool hamCycleUtil(bool graph[V][V], int path[], int pos)
 {
 	/* base case: If all vertices are
 	included in Hamiltonian Cycle */
