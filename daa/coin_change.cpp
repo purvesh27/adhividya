@@ -61,5 +61,4 @@ int main()
 	cout << getNumberOfWays(12, Coins) << endl;
 }
 
-// This code is contributed by mohit kumar 29
 
