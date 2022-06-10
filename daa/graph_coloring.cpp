@@ -51,8 +51,7 @@ bool graphColoringUtil(bool graph[V][V], int m, int color[], int v)
 
 			/* recur to assign colors to
 			rest of the vertices */
-			if (graphColoringUtil(
-				graph, m, color, v + 1) == true)
+			if (graphColoringUtil(graph, m, color, v + 1) == true)
 				return true;
 
 			/* If assigning color c doesn't
